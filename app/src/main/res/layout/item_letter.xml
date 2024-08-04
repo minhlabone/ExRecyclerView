@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+      <TextView
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:paddingTop="20dp"
+          android:paddingBottom="8dp"
+          android:id="@+id/tv_title"
+          android:text="A"
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/tv_name"
+             app:layout_constraintTop_toBottomOf="@id/tv_title"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/bg_first"
+             android:drawableStart="@drawable/baseline_check_circle_24"
+             android:text="ABC XYZ"
+             android:padding="10dp"
+             android:gravity="center_vertical"
+             android:drawablePadding="10dp"
+             />
+        <View
+            android:id="@+id/view"
+            android:visibility="gone"
+
+            android:background="#1D97F8"
+            app:layout_constraintTop_toTopOf="@id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
